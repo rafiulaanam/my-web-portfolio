@@ -7,21 +7,34 @@ import techStack from "@public/techStack.png";
 import { TProject } from "../dashboard/projects/project/project";
 import anamImg from "@public/anam1.png";
 
+// Fetch project data from the API
 async function getProjectData() {
   const baseUrl =
-    process.env.NEXT_PUBLIC_BASE_URL ??
+    process.env.NEXT_PUBLIC_BASE_URL ?? 
     `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`;
 
-  const res = await fetch(
-    `${baseUrl}/api/project?search=Okv-Music&search=Okv photogram`,
-    { next: { revalidate: 3600 } }
-  );
-  if (!res.ok) {
-    // This will activate the closest `error.js` Error Boundary
-    throw new Error("Failed to fetch project data");
-  }
+  try {
+    const res = await fetch(
+      `${baseUrl}/api/project?search=Movielogy&search=Okv-Music`,
+      { next: { revalidate: 3600 } }
+    );
 
-  return res.json();
+    if (!res.ok) {
+      throw new Error(`Failed to fetch project data: ${res.status} ${res.statusText}`);
+    }
+
+    const data = await res.json();
+
+    // Check for valid JSON response
+    if (!Array.isArray(data)) {
+      throw new Error('Invalid JSON response');
+    }
+
+    return data;
+  } catch (error) {
+    console.error('Error fetching project data:', error);
+    throw error;
+  }
 }
 
 const Home = async () => {
@@ -42,42 +55,39 @@ const Home = async () => {
     },
   ];
 
-  const projectsData: TProject[] = await getProjectData();
+  let projectsData: TProject[] = [];
+
+  try {
+    projectsData = await getProjectData();
+  } catch (error) {
+    console.error('Failed to load projects:', error);
+  }
 
   return (
     <main className="container flex flex-col gap-16">
-      {/* hero section */}
+      {/* Hero section */}
       <section className="flex flex-col gap-4 mb-12">
         <div className="flex items-center justify-center gap-4">
           <div className="flex flex-col gap-4 sm:w-10/12 md:w-full">
-            <Typography
-              tag="h1"
-              size="h2/bold"
-              variant={"secondary"}
-              className="block sm:hidden"
-            >
+            <Typography tag="h1" size="h2/bold" variant={"secondary"} className="block sm:hidden">
               Hi 👋
             </Typography>
             <Typography tag="h1" size="h2/bold">
               <span className="text-primary-500">I&apos;m</span> Rafiul Anam
             </Typography>
             <Typography size="body1/normal" variant="secondary">
-              As a full-stack web developer, I assist emerging businesses in
-              achieving their digital aspirations. I specialize in developing
-              modern web applications.
+              As a full-stack web developer, I assist emerging businesses in achieving their digital aspirations. I specialize in developing modern web applications.
             </Typography>
           </div>
-          {/* image */}
+          {/* Image */}
           <div className="hidden sm:block w-full h-80 relative">
-            <div
-              className="absolute -top-8 right-0 sm:w-[300px] sm:h-[350px]  lg:w-[400px] lg:h-[450px] rounded-b-[20%] cursor-pointer transition ease-in-out duration-500 hover:scale-110"
-              style={{ filter: "drop-shadow(0px 11px 27px gray)" }}
-            >
+            <div className="absolute -top-8 right-0 sm:w-[300px] sm:h-[350px] lg:w-[400px] lg:h-[450px] rounded-b-[20%] cursor-pointer transition ease-in-out duration-500 hover:scale-110"
+                 style={{ filter: "drop-shadow(0px 11px 27px gray)" }}>
               <Image
                 src={anamImg}
                 alt="rafiulaanam"
                 quality={100}
-                className="w-full h-full object-cover rounded-b-[20%] "
+                className="w-full h-full object-cover rounded-b-[20%]"
               />
             </div>
           </div>
@@ -91,12 +101,12 @@ const Home = async () => {
         </Button>
       </section>
 
-      {/* selected work */}
+      {/* Selected work */}
       <section className="flex flex-col gap-4 my-8 mt-16">
         <Typography size="h3/semi-bold">Selected Work</Typography>
         <div className="flex flex-col gap-8">
           {projectsData.length ? (
-            projectsData.map((data, index) => (
+            projectsData.map((data) => (
               <Card
                 key={data._id}
                 title={data.title}
@@ -117,10 +127,10 @@ const Home = async () => {
         </div>
       </section>
 
-      {/* know me */}
+      {/* Know me */}
       <section className="flex flex-col gap-4 my-8">
         <Typography size="h3/semi-bold">Get to know me</Typography>
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 ">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
           {widgetCards.map((widget) => (
             <Card
               key={widget.id}
@@ -134,13 +144,12 @@ const Home = async () => {
         </div>
       </section>
 
-      {/* let connect */}
+      {/* Let connect */}
       <section className="flex items-center justify-between flex-col sm:flex-row gap-4 my-8">
         <div className="flex flex-col gap-2">
           <Typography size="h3/semi-bold">Let’s work together</Typography>
           <Typography size="body1/normal" variant="secondary">
-            Want to discuss an opportunity to create something great? I’m ready
-            when you are.
+            Want to discuss an opportunity to create something great? I’m ready when you are.
           </Typography>
         </div>
         <Button

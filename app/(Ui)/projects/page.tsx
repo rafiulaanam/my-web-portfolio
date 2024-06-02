@@ -12,19 +12,37 @@ async function getPersonalProjectData() {
     process.env.NEXT_PUBLIC_BASE_URL ??
     `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`;
 
-  const res = await fetch(`${baseUrl}/api/project?tag=personal`, {
-    next: { revalidate: 3600 },
-  });
-  if (!res.ok) {
-    // This will activate the closest `error.js` Error Boundary
-    throw new Error("Failed to fetch project data");
-  }
+  try {
+    const res = await fetch(`${baseUrl}/api/project?tag=personal`, {
+      next: { revalidate: 3600 },
+    });
 
-  return res.json();
+    if (!res.ok) {
+      throw new Error(`Failed to fetch project data: ${res.status} ${res.statusText}`);
+    }
+
+    const data = await res.json();
+
+    // Additional check to ensure the response is valid JSON
+    if (typeof data !== 'object' || data === null) {
+      throw new Error('Invalid JSON response');
+    }
+
+    return data;
+  } catch (error) {
+    console.error('Error fetching personal project data:', error);
+    throw error;
+  }
 }
 
 const Projects = async () => {
-  const personalProjectsData: TProject[] = await getPersonalProjectData();
+  let personalProjectsData: TProject[] = [];
+
+  try {
+    personalProjectsData = await getPersonalProjectData();
+  } catch (error) {
+    console.error('Failed to load personal projects:', error);
+  }
 
   return (
     <main className="container">
@@ -33,7 +51,7 @@ const Projects = async () => {
           Projects
         </Typography>
         <Typography size="body2/normal" variant="secondary">
-          Projects, I’ve worked on
+          Projects I’ve worked on
         </Typography>
       </div>
       <span className="w-full block border border-primary-300 absolute right-0"></span>
@@ -48,7 +66,7 @@ const Projects = async () => {
                 (a, b) =>
                   Number(new Date(b.createdAt)) - Number(new Date(a.createdAt))
               )
-              .map((data, index) => (
+              .map((data) => (
                 <Card
                   key={data._id}
                   title={data.title}
@@ -73,7 +91,7 @@ const Projects = async () => {
             Professional
           </Typography>
           <Typography size="body2/normal" variant="secondary">
-            *I have built some confidential projects for client and Due to
+            *I have built some confidential projects for clients and Due to
             client confidentiality, I cannot reveal the projects I have built
             for them. However, I will share any public projects I create in the
             future.
