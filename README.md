@@ -1,5 +1,5 @@
 
-![image](https://github.com/onamkrverma/nextjs-portfolio/assets/106578262/262e378a-e396-4935-94e8-f223050a1d15)
+![image](https://github.com/rafiulaanamkrverma/nextjs-portfolio/assets/106578262/262e378a-e396-4935-94e8-f223050a1d15)
 
 
 This is a portfolio website that showcases my work using Next.js. The website is fully responsive and optimized for different devices and screen resolutions. It also features a full stack functionality that enables me to log in as an admin and manage all the projects I have uploaded, such as editing, updating, or deleting them.
@@ -28,7 +28,7 @@ I would like to express my gratitude to [Eihab Khan](https://github.com/eihabkha
 
 ## Installation and setup instructions
 
-1. Clone this repository to your local machine using `git clone https://github.com/onamkrverma/nextjs-portfolio.git`.
+1. Clone this repository to your local machine using `git clone https://github.com/rafiulaanamkrverma/nextjs-portfolio.git`.
 2. Install the dependencies using `npm install` in the project directory.
 3. Run the development server using `npm start` in the project directory.
 4. Open http://localhost:3000 in your browser to view the website.

@@ -15,7 +15,8 @@ export async function middleware(req: NextRequest) {
       return new NextResponse(JSON.stringify({ error: "Unauthorized!" }), {
         status: 401,
       });
-    } else if (pathname === "/api/auth/signup") {
+    }
+     else if (pathname === "/api/auth/signup") {
       return new NextResponse(
         JSON.stringify({
           error: "Unauthorized! Only existing admin can add new admin",

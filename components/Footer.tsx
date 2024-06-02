@@ -6,7 +6,7 @@ import Link from "next/link";
 import footerGradient from "../public/footerGradient.svg";
 import { poppins } from "@app/fonts";
 import { useContext } from "react";
-import { ThemeContext } from "@app/contex/ThemeContex";
+import { ThemeContext } from "@app/(Ui)/contex/ThemeContex";
 import { usePathname } from "next/navigation";
 
 const Footer = () => {
@@ -26,6 +26,18 @@ const Footer = () => {
       link: "/projects",
     },
     {
+      title: "Blogs",
+      link: "/blogs",
+    },
+    {
+      title: "Education",
+      link: "/education",
+    },
+    {
+      title: "Experience",
+      link: "/experience",
+    },
+    {
       title: "Contact",
       link: "/contact",
     },
@@ -37,11 +49,11 @@ const Footer = () => {
   const socialLinks = [
     {
       title: "Github",
-      link: "https://github.com/onamkrverma",
+      link: "https://github.com/rafiulaanam",
     },
     {
       title: "Linkedin",
-      link: "https://linkedin.com/in/onamkumarverma",
+      link: "https://linkedin.com/in/rafiulaanam",
     },
   ];
 
@@ -58,17 +70,17 @@ const Footer = () => {
             <Button
               link="/"
               variant="icon"
-              title="onam"
+              title="rafiulaanam"
               className={`!text-3xl dark:text-white !p-0 !font-bold ${poppins.className}`}
             >
-              {"<Onam/>"}
+              {"<Anam/>"}
             </Button>
           </div>
           {/* footer links */}
           <div className="flex justify-between flex-col sm:flex-row gap-4 sm:gap-20 mr-4">
             <div className="flex flex-col gap-4">
               <Typography size="body1/semi-bold">Link</Typography>
-              <ul className="flex flex-col gap-2">
+              <ul className="grid grid-cols-2 gap-2">
                 {navLinks.map((navLink, index) => (
                   <li key={index}>
                     <Link
@@ -147,10 +159,10 @@ const Footer = () => {
           <Button
             link="/"
             variant="icon"
-            title="onam"
+            title="rafiulaanam"
             className={`!text-3xl dark:text-white !p-0 !font-bold ${poppins.className}`}
           >
-            {"<Onam/>"}
+            {"<Anam/>"}
           </Button>
         </div>
         <Typography
@@ -158,7 +170,7 @@ const Footer = () => {
           variant="secondary"
           className="mb-16 sm:mb-0"
         >
-          © 2024 Onam kumar verma. All Rights Reserved.
+          © 2024 Rafiul Anam. All Rights Reserved.
         </Typography>
       </div>
 
@@ -174,30 +186,30 @@ const Footer = () => {
           className="w-full object-cover blur-2xl"
         />
       </div>
-      <Typography
+      {/* <Typography
         size="small/normal"
         variant="secondary"
         className="text-center"
       >
         UI Design by{" "}
         <a
-          href="https://www.figma.com/community/file/1266863403759514317"
+          href="https://www.figma.com/community/file/1266863403ghj759514317"
           target="_blank"
           rel="noopener noreferrer"
           className="underline"
         >
-          Eihab Khan
+          adsfsdf
         </a>{" "}
         and Develop by{" "}
         <a
-          href="https://linkedin.com/in/onamkumarverma"
+          href="https://linkedin.com/in/rafiulaanam"
           target="_blank"
           rel="noopener noreferrer"
           className="underline"
         >
-          Onamkrverma
+          Rafsadfsd
         </a>
-      </Typography>
+      </Typography> */}
     </footer>
   ) : null;
 };

@@ -15,7 +15,7 @@ export const POST = async (req: Request) => {
         subject,
         message,
         access_key: process.env.FORM_ACCESS_KEY,
-        from_name: "Onam Portfolio Mail",
+        from_name: "Anam Portfolio Mail",
       }),
     });
     if (response.status !== 200) {

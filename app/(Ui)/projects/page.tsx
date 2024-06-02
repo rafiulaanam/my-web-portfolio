@@ -1,10 +1,10 @@
-import { TProject } from "@app/dashboard/project/project";
+import { TProject } from "@app/dashboard/projects/project/project";
 import Card from "@components/Card";
 import Typography from "@components/Typography";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Projects | Onam - Front End Developer",
+  title: "Projects | Anam - Full Stack Developer",
 };
 
 async function getPersonalProjectData() {

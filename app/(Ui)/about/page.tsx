@@ -1,12 +1,12 @@
 import Typography from "@components/Typography";
 import Image from "next/image";
-import onamImg from "@public/onam.png";
+import anamImg from "@public/anam2.png";
 import Link from "next/link";
 import { Metadata } from "next";
 import Button from "@components/Button";
 
 export const metadata: Metadata = {
-  title: "About | Onam - Front End Developer",
+  title: "About | Anam - Full Stack Developer",
 };
 
 const About = () => {
@@ -26,8 +26,8 @@ const About = () => {
         {/* image on top in mobile view */}
         <div className="block sm:hidden w-48 h-fit bg-primary-800 rounded-3xl">
           <Image
-            src={onamImg}
-            alt="onam"
+            src={anamImg}
+            alt="rafiulaanam"
             width={300}
             height={200}
             quality={100}
@@ -41,8 +41,8 @@ const About = () => {
               Who i am
             </Typography>
             <Typography size="body1/normal" variant="secondary">
-              I am Onam Kumar Verma, a self-taught Front End developer from
-              Delhi, India.
+              I am Rafiul Anam, a self-taught Full Stack developer from
+              Sylhet, Bangladesh.
             </Typography>
           </div>
           <div className="flex flex-col gap-2">
@@ -92,15 +92,15 @@ const About = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="w-full h-fit">
                 <Image
-                  src="https://imgur.com/VCQHGSs.png"
-                  alt="freecodecamp"
+                  src="https://i.imgur.com/cAXmewy.jpeg"
+                  alt="programming-hero"
                   width={300}
                   height={200}
                   quality={100}
                   className="w-full h-full object-cover rounded-md"
                 />
                 <Link
-                  href="https://www.freecodecamp.org/certification/fccd6827402-2aa3-473a-8fd3-06849e4a7845/javascript-algorithms-and-data-structures"
+                  href="https://i.imgur.com/cAXmewy.jpeg"
                   className="text-primary-600 dark:text-primary-50  hover:text-primary-900 underline my-2"
                   target="_blank"
                 >
@@ -114,8 +114,8 @@ const About = () => {
           {/* image on right side */}
           <div className="hidden sm:block w-72 h-fit bg-primary-800 rounded-3xl">
             <Image
-              src={onamImg}
-              alt="onam"
+              src={anamImg}
+              alt="rafiulaanam"
               width={300}
               height={200}
               quality={100}

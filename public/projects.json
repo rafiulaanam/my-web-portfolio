@@ -1,0 +1,128 @@
+[
+    {
+      
+      "logo": "",
+      "title": "Keep Notes",
+      "description": "Keep Notes is a web app that lets you create, update, read, and delete notes using JavaScript. It is similar to google keep, but it saves your data on your browser's local storage.",
+      "techUsed": "JavaScript, CSS, HTML",
+      "thumbnail": "https://imgur.com/oRKdfom.png",
+      "githubLink": "https://github.com/rafiulaanamkrverma/Keep-Notes",
+      "demoLink": "https://keepnotes22.netlify.app",
+      "tag": "personal",
+      "createdAt": "2023-12-27T12:02:00.035Z",
+      "updatedAt": "2023-12-27T12:02:00.035Z",
+      "__v": 0
+    },
+    {
+      
+      "logo": "",
+      "title": "Movielogy",
+      "description": "Movielogy is a movie information website that utilizes JavaScript and the TMDB API. It allows users to access the latest trends in movies and discover comprehensive details about each movie, such as its synopsis, trailer, and cast and crew members.",
+      "techUsed": "JavaScript, CSS, HTML",
+      "thumbnail": "https://imgur.com/29XDMQ7.png",
+      "githubLink": "https://github.com/rafiulaanamkrverma/Movielogy",
+      "demoLink": "https://movielogy22.netlify.app/",
+      "tag": "personal",
+      "createdAt": "2023-12-27T12:11:08.157Z",
+      "updatedAt": "2023-12-27T12:11:08.157Z",
+      "__v": 0
+    },
+    {
+      
+      "logo": "",
+      "title": "Zomato Clone (UI/UX)",
+      "description": "Created a web application that replicates the design of Zomato, a leading online food delivery and restaurant discovery platform, using React.js. The web application is fully responsive and adapts to different screen sizes and devices.",
+      "techUsed": "React.js, JavaScript, CSS, HTML",
+      "thumbnail": "https://imgur.com/lISdJ4Q.png",
+      "githubLink": "https://github.com/rafiulaanamkrverma/zomatoClone",
+      "demoLink": "https://zomatouiclone.netlify.app/",
+      "tag": "personal",
+      "createdAt": "2023-12-27T12:19:00.003Z",
+      "updatedAt": "2023-12-27T12:19:00.003Z",
+      "__v": 0
+    },
+    {
+      
+      "logo": "",
+      "title": "Pixabay Clone",
+      "description": "Created a Pixabay clone website that is fully responsive and allows users to browse and search for images from the pixabay database. This website uses React.js, Tailwind CSS and pixabay API to build the front-end.",
+      "techUsed": "React.js, JavaScript, Tailwind CSS, HTML",
+      "thumbnail": "https://imgur.com/r0x2WoL.png",
+      "githubLink": "https://github.com/rafiulaanamkrverma/pixabay-clone",
+      "demoLink": "https://pixabayclone.netlify.app",
+      "tag": "personal",
+      "createdAt": "2023-12-27T12:21:27.480Z",
+      "updatedAt": "2023-12-27T12:21:27.480Z",
+      "__v": 0
+    },
+    {
+      
+      "logo": "https://imgur.com/9zjTPlx.png",
+      "title": "Okv Memes",
+      "description": "Okv memes is a web application that utilizes the MERN stack to offer users a variety of video memes on different topics, from entertainment to current affairs, that can be downloaded and used for their video editing projects. The application also includes an admin dashboard where memes can be administered, uploaded, deleted and edited.",
+      "techUsed": "MongoDB, Express.js, React, Node.js",
+      "thumbnail": "https://imgur.com/QkVdVMP.png",
+      "githubLink": "https://github.com/rafiulaanamkrverma/OKV-Memes",
+      "demoLink": "https://okvmemes.netlify.app/",
+      "tag": "personal",
+      "createdAt": "2023-12-27T12:38:01.957Z",
+      "updatedAt": "2023-12-27T12:38:01.957Z",
+      "__v": 0
+    },
+    {
+      
+      "logo": "",
+      "title": "My old portfolio",
+      "description": "I developed my portfolio website using React.js. This website is fully responsive and optimized for various screen sizes and devices.",
+      "techUsed": "React.js, CSS, HTML",
+      "thumbnail": "https://imgur.com/o0PdWF2.png",
+      "githubLink": "https://github.com/rafiulaanamkrverma/Portfolio",
+      "demoLink": "https://rafiulaanam.netlify.app/projects",
+      "tag": "personal",
+      "createdAt": "2023-12-27T12:50:47.743Z",
+      "updatedAt": "2023-12-27T12:50:47.743Z",
+      "__v": 0
+    },
+    {
+      
+      "logo": "https://imgur.com/pZSahYL.png",
+      "title": "Okv photogram",
+      "description": "Okv photogram is a web app that mimics Instagram's features using React.js and Firebase v9 (Baas). It lets user share their photos, comment and like others' posts. User can also browse and follow other users' profiles.",
+      "techUsed": "React.js, Firebase v9, React-icons, CSS3, HTML",
+      "thumbnail": "https://imgur.com/Dr5Qlfg.png",
+      "githubLink": "https://github.com/rafiulaanamkrverma/instagramClone",
+      "demoLink": "https://okv-photogram.netlify.app/",
+      "tag": "personal",
+      "createdAt": "2023-12-27T12:53:42.064Z",
+      "updatedAt": "2024-01-15T10:18:18.777Z",
+      "__v": 0
+    },
+    {
+      
+      "logo": "https://imgur.com/SDtHvdm.png",
+      "title": "Okv-Music",
+      "description": "Okv-Music is a Progressive Web App that enables users to discover and enjoy new music and songs. It utilizes JavaScript, React.js, and YouTube API to build a user-friendly website with a powerful YouTube search feature.",
+      "techUsed": "React.js, Redux toolkit, CSS3, HTML, YouTube API, Ytdl-core package",
+      "thumbnail": "https://imgur.com/jZHEXDE.png",
+      "githubLink": "https://github.com/rafiulaanamkrverma/okv-music",
+      "demoLink": "https://okv-music.netlify.app/",
+      "tag": "personal",
+      "createdAt": "2023-12-27T12:59:49.314Z",
+      "updatedAt": "2023-12-27T12:59:49.314Z",
+      "__v": 0
+    },
+    {
+      
+      "logo": "",
+      "title": "My Portfolio",
+      "description": "Using next.js, I created a portfolio website that showcases my work. The website is fully responsive and optimized for different devices and screen resolutions. It also features a full stack functionality that allows me to log in as an admin and manage all the projects I have uploaded, such as editing, updating, or deleting them.",
+      "techUsed": "Next.js, TypeScript, MongoDB, Tailwind CSS, HTML",
+      "thumbnail": "https://imgur.com/CxSU2uY.png",
+      "githubLink": "https://github.com/rafiulaanamkrverma/nextjs-portfolio",
+      "demoLink": "",
+      "tag": "personal",
+      "createdAt": "2023-12-28T12:17:12.922Z",
+      "updatedAt": "2023-12-28T12:55:21.980Z",
+      "__v": 0
+    }
+  ]

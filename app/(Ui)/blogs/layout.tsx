@@ -1,10 +1,10 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact | Onam - Front End Developer",
+  title: "Blogs | Anam - Full Stack Developer",
 };
 
-export default function ContactLayout({
+export default function BlogsLayout({
   children,
 }: {
   children: React.ReactNode;

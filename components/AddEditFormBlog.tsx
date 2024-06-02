@@ -5,7 +5,6 @@ import Input from "./Input";
 import Textbox from "./Textbox";
 import Typography from "./Typography";
 import { ChangeEvent, RefObject } from "react";
-import Select from "./Select";
 
 type TAddEditForm = {
   isLoading: boolean;
@@ -19,7 +18,7 @@ type TAddEditForm = {
   formRef: RefObject<HTMLFormElement>;
 };
 
-const AddEditForm = ({
+const AddEditFormBlog = ({
   isLoading,
   handleSubmit,
   actionText,
@@ -47,47 +46,15 @@ const AddEditForm = ({
           defaultValue={projectData?.description}
           required
         />
-        <Select
-          name="tag"
-          label="Select tag"
-          options={["personal", "professional"]}
-          value={projectData?.tag}
-        />
+        
         <Input
           type="text"
-          name="techUsed"
-          label="Tech Used"
-          defaultValue={projectData?.techUsed}
-          required
-        />
-        <Input
-          type="text"
-          name="logo"
-          label="Logo"
-          placeholder="Logo (link only)"
-          defaultValue={projectData?.logo}
-        />
-        <Input
-          type="text"
-          name="thumbnail"
-          label="Thumbnail"
-          placeholder="Thumbnail (link only)"
-          defaultValue={projectData?.thumbnail}
-          required
-        />
-        <Input
-          type="text"
-          name="githubLink"
-          label="Github Link"
-          defaultValue={projectData?.githubLink}
-          required
-        />
-        <Input
-          type="text"
-          name="demoLink"
+          name="tags"
           label="Demo Link"
-          defaultValue={projectData?.demoLink}
+          defaultValue={projectData?.tag}
         />
+      
+    
         <div className="flex justify-end gap-4 items-center mt-4">
           <Button type="reset" title="Reset" variant="danger">
             Reset
@@ -115,4 +82,4 @@ const AddEditForm = ({
   );
 };
 
-export default AddEditForm;
+export default AddEditFormBlog;

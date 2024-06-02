@@ -30,7 +30,7 @@ const Login = () => {
   return (
     <div className="flex justify-center items-center h-screen w-full p-4">
       <div className="bg-primary-100 flex flex-col gap-4 items-center p-5 rounded-xl shadow-lg w-full max-w-md">
-        <Typography size="h5/semi-bold">Onam Portfolio</Typography>
+        <Typography size="h5/semi-bold">Anam Portfolio</Typography>
         <Typography size="body1/semi-bold">Admin Login</Typography>
         <form
           onSubmit={handleLoginAdmin}

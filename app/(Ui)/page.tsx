@@ -4,8 +4,8 @@ import Button from "@components/Button";
 import Card from "@components/Card";
 import aboutVector from "@public/aboutVector.png";
 import techStack from "@public/techStack.png";
-import { TProject } from "./dashboard/project/project";
-import onamImg from "@public/onam.png";
+import { TProject } from "../dashboard/projects/project/project";
+import anamImg from "@public/anam1.png";
 
 async function getProjectData() {
   const baseUrl =
@@ -59,11 +59,10 @@ const Home = async () => {
               Hi 👋
             </Typography>
             <Typography tag="h1" size="h2/bold">
-              <span className="text-primary-500">I&apos;m</span> Onam Kumar
-              Verma
+              <span className="text-primary-500">I&apos;m</span> Rafiul Anam
             </Typography>
             <Typography size="body1/normal" variant="secondary">
-              As a front-end developer, I assist emerging businesses in
+              As a full-stack web developer, I assist emerging businesses in
               achieving their digital aspirations. I specialize in developing
               modern web applications.
             </Typography>
@@ -75,8 +74,8 @@ const Home = async () => {
               style={{ filter: "drop-shadow(0px 11px 27px gray)" }}
             >
               <Image
-                src={onamImg}
-                alt="onam"
+                src={anamImg}
+                alt="rafiulaanam"
                 quality={100}
                 className="w-full h-full object-cover rounded-b-[20%] "
               />

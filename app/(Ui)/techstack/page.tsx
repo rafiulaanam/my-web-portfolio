@@ -4,7 +4,7 @@ import { TechStackList } from "./techStackList";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "TechStack | Onam - Front End Developer",
+  title: "TechStack | Anam - Full Stack Developer",
 };
 
 const TechStack = () => {

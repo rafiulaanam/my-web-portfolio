@@ -16,7 +16,7 @@ const Contact = () => {
   const socialLinks = [
     {
       title: "Linkedin",
-      link: "https://linkedin.com/in/onamkumarverma",
+      link: "https://linkedin.com/in/rafiulaanam",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -35,7 +35,7 @@ const Contact = () => {
     },
     {
       title: "Github",
-      link: "https://github.com/onamkrverma",
+      link: "https://github.com/rafiulaanam",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
