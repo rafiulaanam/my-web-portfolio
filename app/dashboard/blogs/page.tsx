@@ -76,7 +76,7 @@ const AddBlog = () => {
           variant="primary"
           className="absolute right-0 !bg-primary-50 !text-danger-600 gap-2 items-center !shadow-md !p-2"
           onClick={() =>
-            signOut({ redirect: true, callbackUrl: "/dashboard/login" })
+            signOut({ redirect: true, callbackUrl: "/login" })
           }
         >
           <svg

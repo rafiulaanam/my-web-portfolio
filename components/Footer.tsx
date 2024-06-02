@@ -59,7 +59,7 @@ const Footer = () => {
 
   const currentPath = usePathname();
 
-  return currentPath !== "/dashboard/login" ? (
+  return currentPath !== "/login" ? (
     <footer className="relative mt-8 pb-8 ">
       <span className="w-full block border border-primary-300 mb-10"></span>
 

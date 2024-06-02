@@ -188,7 +188,7 @@ const Navbar = () => {
     localStorage.setItem("theme", theme);
   }, [theme]);
 
-  return currentPath !== "/dashboard/login" ? (
+  return currentPath !== "/login" ? (
     <>
       <header
         className={`hidden container sm:block bg-white/25 border-white/50 rounded-xl border backdrop-blur-md dark:bg-primary-900/30 dark:border-white/20 `}

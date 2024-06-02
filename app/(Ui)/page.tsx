@@ -92,13 +92,22 @@ const Home = async () => {
             </div>
           </div>
         </div>
-        <Button
+       <div className="flex gap-4">
+       <Button
           link="/contact"
           title="Get in touch"
           className="!w-full sm:!w-fit hover:bg-primary-700"
         >
           Get in touch
         </Button>
+        <Button
+          link="https://drive.google.com/file/d/16h2H6GstJZQKoIB-qlpos3574Qszj1rd/view?usp=sharing"
+          title="Get in touch"
+          className="!w-full sm:!w-fit hover:bg-primary-700"
+        >
+          Download Resume
+        </Button>
+       </div>
       </section>
 
       {/* Selected work */}

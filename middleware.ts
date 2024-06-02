@@ -10,7 +10,7 @@ export async function middleware(req: NextRequest) {
 
   if (!authToken) {
     if (pathname === "/dashboard") {
-      return NextResponse.redirect(new URL("/dashboard/login", req.url));
+      return NextResponse.redirect(new URL("/login", req.url));
     } else if (pathname === "/api/project" && httpMethod !== "GET") {
       return new NextResponse(JSON.stringify({ error: "Unauthorized!" }), {
         status: 401,
@@ -27,7 +27,7 @@ export async function middleware(req: NextRequest) {
       );
     }
   } else {
-    if (pathname === "/dashboard/login") {
+    if (pathname === "/login") {
       return NextResponse.redirect(new URL("/dashboard", req.url));
     }
   }

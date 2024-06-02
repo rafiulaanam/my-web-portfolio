@@ -1,13 +1,13 @@
 
 
-const Experience = () => {
+const Education = () => {
     return (
         <div>
-            <div>
+         <div>
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto flex flex-wrap">
           <h1 className="text-white font-bold text-2xl">
-            License and Certifications
+            Educational Qualification
           </h1>
           <div className="flex flex-wrap w-full">
             <div className=" md:pr-10 md:py-6">
@@ -30,18 +30,16 @@ const Experience = () => {
                 </div>
                 <div className="flex-grow pl-4">
                   <h2 className="font-semibold title-font text-lg text-[#72E2AE] mb-1 tracking-wider">
-                    Complete Web Development Course With Jhankar Mahbub
+                    Bachelor in Computer Science and Engineering
                   </h2>
                   <h2 className="font-medium title-font text-sm text-white mb-1 tracking-wider">
-                    Programming Hero.{" "}
-                    <span className="italic text-xs">
-                      (Jun 2022 - Dec 2022)
-                    </span>
+                    Metropolitan University.{" "}
+                    <span className="italic text-xs">(2022 - Present)</span>
                   </h2>
                   <p className="leading-relaxed text-gray-300">
-                    I got a great Knowledge about building a professional
-                    website as a MERN-stack Developer. After complete this
-                    course we got a certificate
+                    I am started doing study at this University from 2022 to
+                    now. Its a great chance to access different type of
+                    technology.{" "}
                   </p>
                 </div>
               </div>
@@ -64,17 +62,16 @@ const Experience = () => {
                 </div>
                 <div className="flex-grow pl-4">
                   <h2 className="font-semibold title-font text-lg text-[#72E2AE] mb-1 tracking-wider">
-                    Web Application Development With Sheikh Kamal IT
+                    Higher School Graduation
                   </h2>
                   <h2 className="font-medium title-font text-sm text-white mb-1 tracking-wider">
-                    Sheikh Kamal IT.{" "}
-                    <span className="italic text-xs">
-                      (Jan 2021 - Jun 2021)
-                    </span>
+                    Sylhet Govt. College.{" "}
+                    <span className="italic text-xs">(2018 - 2021)</span>
                   </h2>
                   <p className="leading-relaxed text-gray-300">
-                    This is course which provided by Government. At the end we
-                    got certificate{" "}
+                    I am in Science group. Education Government took one year
+                    extra for Covid-19 pandemic and then our final results
+                    published in January 2021. I got GPA 5.00 out of 5.00{" "}
                   </p>
                 </div>
               </div>
@@ -98,16 +95,16 @@ const Experience = () => {
                 </div>
                 <div className="flex-grow pl-4">
                   <h2 className="font-semibold title-font text-lg text-[#72E2AE] mb-1 tracking-wider">
-                    Advance Crash Course (ACC)
+                    Secondary School Graduation
                   </h2>
                   <h2 className="font-medium title-font text-sm text-white mb-1 tracking-wider">
-                    Programming Hero.{" "}
-                    <span className="italic text-xs">(Jan 2023 - Present)</span>
+                    Scholarshome.{" "}
+                    <span className="italic text-xs">(2016 - 2018)</span>
                   </h2>
                   <p className="leading-relaxed text-gray-300">
-                    {" "}
-                    We got two course till now. First, Redux From Beginner Level
-                    To Advanced and Second, Node-Mongo Crash Course{" "}
+                    This is the time we confused than which group we should
+                    select. As I want to become a Software Engineer thats why I
+                    choose this group. I got GPA 4.56 out of 5.00{" "}
                   </p>
                 </div>
               </div>
@@ -147,4 +144,4 @@ const Experience = () => {
     );
 };
 
-export default Experience;
+export default Education;
