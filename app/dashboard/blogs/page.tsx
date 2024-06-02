@@ -4,13 +4,13 @@ import Typography from "@components/Typography";
 import { signOut } from "next-auth/react";
 import Card from "@components/Card";
 import { useEffect, useState } from "react";
-import { TProject } from "./add-blog/project";
 import Loading from "@components/Loading";
 import Popup from "@components/Popup";
+import { TBlog } from "./add-blog/blog";
 
 const AddBlog = () => {
   const [isDeletePopup, setIsDeletePopup] = useState<boolean>(false);
-  const [projectsData, setProjectsData] = useState<TProject[]>([]);
+  const [projectsData, setProjectsData] = useState<TBlog[]>([]);
   const [isProjectsLoading, setIsProjectsLoading] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);

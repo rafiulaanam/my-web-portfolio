@@ -1,10 +1,11 @@
 "use client";
-import { TProject } from "@app/dashboard/projects/project/project";
+
 import Button from "./Button";
 import Input from "./Input";
 import Textbox from "./Textbox";
 import Typography from "./Typography";
 import { ChangeEvent, RefObject } from "react";
+import { TBlog } from "@app/dashboard/blogs/add-blog/blog";
 
 type TAddEditForm = {
   isLoading: boolean;
@@ -14,7 +15,7 @@ type TAddEditForm = {
     variant: "error" | "success";
     message: string;
   } | null;
-  projectData?: TProject | null;
+  projectData?: TBlog | null;
   formRef: RefObject<HTMLFormElement>;
 };
 
@@ -51,7 +52,7 @@ const AddEditFormBlog = ({
           type="text"
           name="tags"
           label="Demo Link"
-          defaultValue={projectData?.tag}
+          defaultValue={projectData?.tags}
         />
       
     

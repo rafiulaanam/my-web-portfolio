@@ -1,4 +1,4 @@
-export type TProject = {
+export type TBlog = {
   _id: string;
  
   title: string;

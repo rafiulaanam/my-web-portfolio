@@ -1,11 +1,11 @@
 "use client";
-import AddEditForm from "@components/AddEditForm";
 import Typography from "@components/Typography";
 import { ChangeEvent, useEffect, useRef, useState } from "react";
-import { TProject } from "../project";
+import AddEditFormBlog from "@components/AddEditFormBlog";
+import { TBlog } from "../blog";
 
 const EditProduct = ({ params }: { params: { id: string } }) => {
-  const [projectData, setProjectData] = useState<TProject | null>(null);
+  const [projectData, setProjectData] = useState<TBlog | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [statusMessage, setStatusMessage] = useState<{
     variant: "error" | "success";
@@ -37,15 +37,11 @@ const EditProduct = ({ params }: { params: { id: string } }) => {
         const {
           title,
           description,
-          techUsed,
-          thumbnail,
-          logo,
-          githubLink,
-          demoLink,
-          tag,
+         
+          tags,
         } = formDataObj;
 
-        const res = await fetch(`/api/project/${params.id}`, {
+        const res = await fetch(`/api/blogs/add-blog/${params.id}`, {
           method: "PUT",
           headers: {
             "content-type": "application/json",
@@ -54,12 +50,8 @@ const EditProduct = ({ params }: { params: { id: string } }) => {
           body: JSON.stringify({
             title,
             description,
-            techUsed,
-            thumbnail,
-            logo,
-            githubLink,
-            demoLink,
-            tag,
+            
+            tags,
           }),
         });
         if (!res.ok) {
@@ -86,7 +78,7 @@ const EditProduct = ({ params }: { params: { id: string } }) => {
         Edit Project
       </Typography>
       <div className="flex justify-center ">
-        <AddEditForm
+        <AddEditFormBlog
           actionText="Update Project"
           isLoading={isLoading}
           statusMessage={statusMessage}
